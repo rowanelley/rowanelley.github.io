@@ -1,1 +1,131 @@
-Placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Photos</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: "Lato", sans-serif;
+            display: flex;
+            margin: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 16px; /* Reset text to default size */
+            padding: 0px 10px;
+            flex: 1;
+        }
+
+        p {
+            margin-left: 40px;
+            font-family: segoe ui;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: segoe ui;
+        }
+
+        h2 {
+            margin-left: 40px;
+            font-family: segoe ui;
+        }
+
+        .bullet {
+            margin-left: 60px;
+            font-family: segoe ui;
+        }
+
+        .footer {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .sidenav {
+                display: none;
+            }
+
+            .main {
+                margin-left: 0;
+                margin-bottom: 50px; /* Space for the footer */
+            }
+
+            .footer {
+                display: flex;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: #111;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                z-index: 1;
+                justify-content: space-around;
+            }
+
+            .footer a {
+                color: #818181;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 10px;
+            }
+
+            .footer a:hover {
+                color: #f1f1f1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="../index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+    <h1>Recent Photos</h1>
+    <hr>
+    <p>NOOOOO</p>
+</div>
+
+<!-- Footer for mobile -->
+<div class="footer">
+    <a href="../index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+</div>
+
+</body>
+</html>

@@ -63,16 +63,51 @@
             font-family: segoe ui;
         }
 
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
+        .footer {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .sidenav {
+                display: none;
+            }
+
+            .main {
+                margin-left: 0;
+                margin-bottom: 50px; /* Space for the footer */
+            }
+
+            .footer {
+                display: flex;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                background-color: #111;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                z-index: 1;
+                justify-content: space-around;
+            }
+
+            .footer a {
+                color: #818181;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 10px;
+            }
+
+            .footer a:hover {
+                color: #f1f1f1;
+            }
         }
     </style>
 </head>
 <body>
 
 <div class="sidenav">
-    <a href="#about">About</a>
+    <a href="photos/recent.html">Photos</a>
     <a href="#services">Services</a>
     <a href="#clients">Clients</a>
     <a href="#contact">Contact</a>
@@ -86,6 +121,14 @@
     <p class="bullet">- I know a bit of HTML & CSS 🌐 (clearly!)</p>
     <p class="bullet">- Python! 🐍</p>
     <p class="bullet">- C#</p>
+</div>
+
+<!-- Footer for mobile -->
+<div class="footer">
+    <a href="photos/recent.html">Photos</a>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
 </div>
 
 </body>
