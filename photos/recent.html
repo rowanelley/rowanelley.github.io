@@ -5,139 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recent Photos</title>
     <link rel="icon" type="image/x-icon" href="../files/favicon.ico">
-    <style>
-        /* Internal CSS */
-        body {
-            font-family: "Lato", sans-serif;
-            display: flex;
-            margin: 0;
-        }
-
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-        }
-
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        .main {
-            margin-left: 160px; /* Same as the width of the sidenav */
-            font-size: 16px; /* Reset text to default size */
-            padding: 0px 10px;
-            flex: 1;
-        }
-
-        p {
-            margin-left: 40px;
-            font-family: segoe ui;
-        }
-
-        h1 {
-            text-align: center;
-            font-family: segoe ui;
-        }
-
-        h2 {
-            margin-left: 40px;
-            font-family: segoe ui;
-        }
-
-        .bullet {
-            margin-left: 60px;
-            font-family: segoe ui;
-        }
-
-        .footer {
-            display: none;
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-            height: auto;
-            width: 400px;
-        }
-
-        @media screen and (max-width: 600px) {
-            .sidenav {
-                display: none;
-            }
-
-            .main {
-                margin-left: 0;
-                margin-bottom: 50px; /* Space for the footer */
-            }
-
-            .footer {
-                display: flex;
-                width: 100%;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                background-color: #111;
-                color: white;
-                text-align: center;
-                padding: 10px 0;
-                z-index: 1;
-                justify-content: space-around;
-            }
-
-            .footer a {
-                color: #818181;
-                font-size: 20px;
-                text-decoration: none;
-                padding: 10px;
-            }
-
-            .footer a:hover {
-                color: #f1f1f1;
-            }
-        }
-    </style>
 </head>
 <body>
+    <style>
+        html {background-color: rgb(32, 154, 175);}
+        h1 {text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;}
+        p {text-align: center; font-family: Arial, Helvetica, sans-serif; color: white;}
+        .paragraph {text-overflow: ellipsis; width: 50%; margin: auto; text-align: center;}
+        a {text-align: center; font-family: Arial, Helvetica, sans-serif;}
+        img {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;}
+    </style>
 
-<div class="sidenav">
-    <a href="../index.html">Home</a>
-    <a href="#services">Services</a>
-    <a href="#clients">Clients</a>
-    <a href="#contact">Contact</a>
-</div>
-
-<div class="main">
     <h1>Recent Photos</h1>
-    <hr>
-    <img src="../files/photos/Stir-Fry.jpg" alt="">
-    <p style="text-align: center; margin-left: 0;">Stir-Fry!!!!!</p>
-    <hr>
-</div>
-
-<!-- Footer for mobile -->
-<div class="footer">
-    <a href="../">Home</a>
-    <a href="#services">Services</a>
-    <a href="#clients">Clients</a>
-    <a href="#contact">Contact</a>
-</div>
-
+    <div class="paragraph"><a href="https://rowanelley.github.io">Home</a></div>
+    <img src="https://rowanelley.github.io/files/photos/Stir-Fry.jpg" alt="Stir-Fry">
 </body>
 </html>
