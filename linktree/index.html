@@ -5,25 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RE - LINKTREE</title>
     <link rel="icon" type="image/x-icon" href="https://rowanelley.xyz/linktree/favicon.ico"/>
+    <style>
+        /* General styles */
+        html {
+            background-color: #f7f9fb;
+        }
+        body {
+            margin: 0;
+            padding: 20px 0; /* Add padding at the top and bottom of the page */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            color: #6185b7;
+            font-size: 128px; /* Large header */
+            font-weight: 200;
+            margin: 20px 0;
+        }
+        .paragraph {
+            text-overflow: ellipsis;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        a {
+            display: block; /* Make links appear on their own lines */
+            text-align: center;
+            font-size: 32px; /* Default link font size */
+            text-decoration: none;
+            color: #8378c1;
+            margin-top: 10px; /* Spacing between links */
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #5d5aa7; /* Slightly darker color on hover */
+        }
+        a:visited {
+            color: #8378c1;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 64px; /* Reduced header size for tablets */
+            }
+            .paragraph {
+                width: 80%; /* Adjust paragraph width for smaller screens */
+            }
+            a {
+                font-size: 28px; /* Adjust link font size for tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 48px; /* Reduced header size for mobile */
+            }
+            a {
+                font-size: 24px; /* Adjust link font size for mobile */
+            }
+        }
+    </style>
 </head>
 <body>
-   <style>
-        html {background-color: #f7f9fb;}
-        h1 {text-align: center; color: #6185b7; font-family: Arial, Helvetica, sans-serif; font-size: 128px; font-weight: 200;}
-        h2 {text-align: center;}
-        p {text-align: center; font-family: Arial, Helvetica, sans-serif; color: #05070a;}
-        .paragraph {text-overflow: ellipsis; width: 50%; margin: auto; text-align: center;}
-        a {text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 32px; text-decoration: none;}
-        a:hover {text-decoration: underline; color: #8378c1;}
-        a:visited {color: #8378c1;}
-        a:link {color: #8378c1;}
-        iframe {margin-top: 10px;}
-   </style> 
-
-   <h1>LINKTREE</h1>
-   <div class="paragraph">
-        <a href="https://github.com/rowanelley">GITUHB<br/></a>
-        <a href="https://youtube.com/@rowanelley">YOUTUBE<br/></a>
-   </div>
+    <h1>LINKTREE</h1>
+    <div class="paragraph">
+        <a href="https://github.com/rowanelley">GITHUB</a>
+        <a href="https://youtube.com/@rowanelley">YOUTUBE</a>
+    </div>
 </body>
 </html>
